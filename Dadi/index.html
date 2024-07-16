@@ -16,18 +16,18 @@
         <!-- CDN Icon Bootstrap -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
-        <title>Bootstrap</title>
+        <title>Dadi</title>
     </head>
     <body>
 
             <!-- HEADER -->
             <header>
 
-                    <h1 class="text-white text-center fs-1 py-3">
-
-                        Verificatore email
-
-                    </h1>
+                <h1 class="text-white text-center fs-2 py-3">
+                    
+                    GIOCHIAMO A DADI!
+                
+                </h1>
 
             </header>
     
@@ -35,54 +35,32 @@
 
             <main>
 
-                <div class="container d-flex justify-content-center">
+                <div id="dice" class="container mx-auto mt-4">
 
-                    <form action="" class="d-flex justify-content-center flex-column">
+                    <form class="row text-center fs-4 text-white" action="">
 
-                        <label for="email" class="text-white text-center fs-3 d-block py-2">
+                        <!-- USER NUMBER -->
 
-                            Inserisci la tua email
-
-                        </label>
-
-                        <input type="email" name="email" id="email" placeholder="Inserisci qui la mail..." class="w-100 py-2" required>                  
-                        <button type="button" class="btn btn-warning mt-3 w-50 mx-auto" id="button">
-
-                            Verifica email
-
-                        </button>
-
-                    </form>
-                    
-                </div>
-
-                <div id="verify" class="container d-flex justify-content-center text-white fs-3 py-3">
-
-                    La tua mail è: <span id="result"></span>
-
-                </div>
-
-                <div id="dice" class="d-none container mx-auto mt-4">
-
-                    <h1 class="text-white text-center fs-2 py-3">GIOCHIAMO A DADI!</h1>
-
-                    <div class="row mt-5">
-
-                        <form class="col-6 text-center text-white" action="">
+                        <div class="col-6">
 
                             <label for="user-num">Il tuo numero</label>
                             <div id="user-num"></div>
-                            <button type="button" id="generate-num">Genera</button>
 
-                        </form>
+                        </div>
+                        <!-- AI NUMBER -->
 
-                        <div class="col-6 text-center text-white">
+                        <div class="col-6 text-center fs-4 text-white">
 
-                            <div>Numero del computer:</div>
+                            <div>Numero del computer</div>
+                            <div id="ai-num"></div>
 
                         </div>
 
-                    </div>
+                        <button type="button" class="btn btn-light fs-6 col-1 mx-auto" id="generate-num">Genera</button>
+
+                    </form>
+
+                    <div id="score" class="text-center mt-4 text-white fs-1"></div>
 
                 </div>
                 
