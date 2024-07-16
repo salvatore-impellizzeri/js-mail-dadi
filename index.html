@@ -20,36 +20,79 @@
     </head>
     <body>
 
-        <!-- HEADER -->
+            <!-- HEADER -->
+            <header>
 
-         <header>
+                    <h1 class="text-white text-center fs-1 py-3">
 
-            <div class="container">
+                        Verificatore email
+
+                    </h1>
+
+            </header>
+    
+            <!-- MAIN -->
+
+            <main>
+
+                <div class="container d-flex justify-content-center">
+
+                    <form action="" class="d-flex justify-content-center flex-column">
+
+                        <label for="email" class="text-white text-center fs-3 d-block py-2">
+
+                            Inserisci la tua email
+
+                        </label>
+
+                        <input type="email" name="email" id="email" placeholder="Inserisci qui la mail..." class="w-100 py-2" required>                  
+                        <button type="button" class="btn btn-warning mt-3 w-50 mx-auto" id="button">
+
+                            Verifica email
+
+                        </button>
+
+                    </form>
+                    
+                </div>
+
+                <div id="verify" class="container d-flex justify-content-center text-white fs-3 py-3">
+
+                    La tua mail è: <span id="result"></span>
+
+                </div>
+
+                <div id="dice" class="d-none container mx-auto mt-4">
+
+                    <h1 class="text-white text-center fs-2 py-3">GIOCHIAMO A DADI!</h1>
+
+                    <div class="row mt-5">
+
+                        <form class="col-6 text-center text-white" action="">
+
+                            <label for="user-num">Il tuo numero</label>
+                            <div id="user-num"></div>
+                            <button type="button" id="generate-num">Genera</button>
+
+                        </form>
+
+                        <div class="col-6 text-center text-white">
+
+                            <div>Numero del computer:</div>
+
+                        </div>
+
+                    </div>
+
+                </div>
                 
-            </div>
-
-         </header>
-
-        <!-- MAIN -->
-
-        <main>
-
-            <div class="container">
-
-            </div>
-
-        </main>
-
-        <!-- FOOTER -->
-
-        <Footer>
-
-            <div class="container"></div>
-
-        </Footer>
+            </main>
 
         <!-- JS BOOTSTRAP -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+        <!-- JS -->
+        <script type="text/javascript" src="js/scripts.js"></script>
 
     </body>
 </html>
